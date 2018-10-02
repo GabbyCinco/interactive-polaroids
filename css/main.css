@@ -12,27 +12,36 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+
+  position: absolute;
+  top: 60px;
 }
 
 .polaroid:first-child {
   transform: rotate(-11deg);
   position: absolute;
-  top: 250px;
+  top: 50px;
   left: 210px;
 }
 
 .polaroid:nth-child(2) {
   transform: rotate(4deg);
   position: absolute;
-  top: 300px;
+  top: 100px;
   left: 300px;
+  z-index: 1;
 }
 
 .polaroid:last-child {
   transform: rotate(25deg);
   position: absolute;
-  top: 245px;
+  top: 45px;
   left: 410px;
+}
+
+.polaroid:hover {
+  z-index: 10;
+  transform: rotate(0);
 }
 
 .polaroid > img {
